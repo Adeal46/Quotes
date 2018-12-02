@@ -1,6 +1,7 @@
 cite,
 footer {
     color: white;
+    font-size: 15px;
 }
 
 button {
@@ -21,6 +22,7 @@ button {
 
 .fa-thumbs-up:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .fa-thumbs-down {
@@ -37,4 +39,5 @@ button {
 
 .fa-thumbs-down:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
