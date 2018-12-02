@@ -7,13 +7,13 @@ export class HighestDirective {
   constructor(private elem: ElementRef) { }
 
   @HostListener("click") onClicks() {
-    this.textDeco("line-through")
+    this.textDeco("red")
   }
   @HostListener("dblclick") onDoubleClicks() {
-    this.textDeco("None")
+    this.textDeco("black")
   }
 
   private textDeco(action: string) {
-    this.elem.nativeElement.style.textDecoration = action;
+    this.elem.nativeElement.style.backgroundColor = action;
   }
 }
