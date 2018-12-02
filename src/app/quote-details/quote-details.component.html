@@ -1,0 +1,15 @@
+<h4>Date Posted: {{quote.time|time}}</h4>
+<blockquote >
+  <p>{{quote.entry}}</p>
+  <footer>Author:
+     <cite >{{quote.author}}</cite>
+   </footer>
+ 
+ </blockquote>
+ 
+ 
+   <i class=" fas fa-thumbs-up" (click)="increaseRating(true)">{{quote.like}}</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <i class="fas fa-thumbs-down" (click)="increaseRating(false)">{{quote.dislike}}</i>
+ 
+   <br>
+   <button class="btn btn-danger" (click)= "deleteQuote(true)">Delete</button>
