@@ -1,16 +1,16 @@
 <div class="container main">
-<div class="jumbotron">
- </div><hr>
-<div class="row">
- <div class="col-md-4">
-  <div class=" text-center">
-    <div class="well">
-      <p>Enter your quote in the form below</p>
-    </div>
-    <app-quote-form [addNewQuote]='addNewQuoteFunc' ></app-quote-form>
-     
-  </div>
+  <div class="jumbotron">
 </div>
+<hr>
+  <div class="row">
+    <div class="col-md-4">
+      <div class=" text-center">
+        <div class="well">
+          <p>Enter your quote in the form below</p>
+        </div>
+        <app-quote-form [addNewQuote]='addNewQuoteFunc' ></app-quote-form>
+      </div>
+    </div>
 <!-- <div class="row"> -->
 <div class="col-md-8">
     <div *ngFor="let quote of quotes;let i = index">
