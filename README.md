@@ -37,7 +37,7 @@ Output Exaple: Me, You, Us
 
  
 ### Support and contact details
-* Contact me through my email: adeal4@gmail.com
+* Contact me through my email: adililema3@gmail.com 
 * The source code is also contained within the folder containing this ReadMe with comments on the code thus third-party support can be offered.
 
 ### License
