@@ -1,7 +1,7 @@
 <div class="container main">
   <div class="jumbotron">
-</div>
-<hr>
+  </div>
+  <hr>
   <div class="row">
     <div class="col-md-4">
       <div class=" text-center">
@@ -18,16 +18,16 @@
         <!-- <div class="col" > -->
         <div class="panel panel-info" >
           <div class="panel-body">
-          <div id="{{i}}">
-            <h1><span appHighest>{{quote.title}}</span></h1>
-            <app-quote-details [quote]='quote' (isRating)='increaseRating($event,i)' (isDelete)='deleteQuote($event,i)'></app-quote-details>
+            <div id="{{i}}">
+              <h1><span [appHighest]="quote.highest">{{quote.title}}</span></h1>
+              <app-quote-details [quote]='quote' (isRating)='increaseRating($event,i)' (isDelete)='deleteQuote($event,i)'></app-quote-details>
+            </div>
           </div>
-        </div>
         </div>
         <!-- </div> -->
       </div>
     </div>
 </div>
-        <!-- </div> -->
+<!-- </div> -->
 </div>
 </div>
