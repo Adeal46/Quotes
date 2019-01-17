@@ -1,19 +1,28 @@
-import { Directive, ElementRef, Input, HostListener } from '@angular/core';
+import { Directive, ElementRef,Input,HostListener,OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appHighest]'
 })
-export class HighestDirective {
-  constructor(private elem: ElementRef) { }
+export class HighestDirective implements OnInit {
+  @Input("appHighest") highest: boolean;
 
-  @HostListener("click") onClicks() {
-    this.textDeco("red")
+  constructor(private elem: ElementRef) {}
+
+  @HostListener("change") ngOnChanges(){
+    if(this.highest){
+      this.elem.nativeElement.style.backgroundColor= 'LightGoldenrodYellow';
+      this.elem.nativeElement.style.color= 'black';
+
+
+      console.log("Done In")
+    }else{
+      this.elem.nativeElement.style.backgroundColor= 'transparent';
+      this.elem.nativeElement.style.color='white'
+      console.log("Done")
+    }
   }
-  @HostListener("dblclick") onDoubleClicks() {
-    this.textDeco("black")
+  ngOnInit(){
+
   }
 
-  private textDeco(action: string) {
-    this.elem.nativeElement.style.backgroundColor = action;
-  }
 }
