@@ -8,7 +8,7 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   private duration: number;
-  private id:number =0;
+  private id: number = 0;
   quotes = [
   ]
   increaseRating(isRating,index){

@@ -9,7 +9,7 @@ By: Adili Lema
 The webapp contains allows one to post a quote using the form and vote on other posted quotes displayed on the side.
 
 ## Setup/Installation Requirements
-* The github page is currently live thus the following link will take you to the webpage "https://adililema.github.io/Quotes/"
+* The github page is currently live thus the following link will take you to the webpage "https://Adeal46.github.io/Quotes/"
 * As long as you have a compatible browser the document will work.
 
 ### Known Bugs
